@@ -45,16 +45,16 @@ print(type(listaPersonas[1]))
 print(listaPersonas[0]["edad"])
 
 # Recorrer la lista de personas
-for i, persona in enumerate(listaPersonas):
+for i, opcionUsuario in enumerate(listaPersonas):
     print("#################")
-    print(f"#### Persona #{i + 1} ####")
+    print("#### Persona",i+1, "####")
     print("#################")
-    print("Nombre:", persona["nombre"])
-    print("Apellido:", persona["apellido"])
-    print("Edad:", persona["edad"])
+    print("Nombre:", opcionUsuario["nombre"])
+    print("Apellido:", opcionUsuario["apellido"])
+    print("Edad:", opcionUsuario["edad"])
 
 # Diccionario con listas (más robusto)
-diccionarioRobusto1 = {
+diccionarioRobusto = {
     "id": 1,
     "nombre": "Pedro",
     "apellido": "Gómez",
@@ -76,20 +76,20 @@ diccionarioRobusto2 = {
     ]
 }
 
-listaRobusta = [diccionarioRobusto1, diccionarioRobusto2]
+listaRobusta = [diccionarioRobusto, diccionarioRobusto2]
 
 # Mostrar número de trabajo del primer contacto
 for telefono in listaRobusta[0]["telefonos"]:
     if telefono['tipo'] == "trabajo":
         print(telefono['numero'])
 
-# Mostrar otro número específico
-numeroPrimeraPersona = listaRobusta[0]["telefonos"][1]['numero']
-tipoNumeroPP = listaRobusta[0]["telefonos"][1]['tipo']
-print(str(numeroPrimeraPersona) + " " + tipoNumeroPP)
+    # Mostrar otro número específico
+    numeroPrimeraPersona = listaRobusta[0]["telefonos"][1]['numero']
+    tipoNumeroPP = listaRobusta[0]["telefonos"][1]['tipo']
+    print(str(numeroPrimeraPersona) + " " + tipoNumeroPP)
 
-# Menú CRUD
-booleanito = True
+    # Menú CRUD
+    booleanito = True
 while booleanito:
     print("#################")
     print("#### Librería de personas ####")
@@ -104,7 +104,7 @@ while booleanito:
     opcionUsuario = input("Ingrese una opción (número): ")
     print("")
 
-    if(opcionUsuario==1):
+if(opcionUsuario==1):
         print("#################")
         print("#### Crear Persona ####")
         print("#################")
@@ -118,7 +118,7 @@ while booleanito:
         cantidadTelefonos = int(input("¿Cuántos teléfonos quiere agregar?: "))
         for i in range(cantidadTelefonos):
             telefono = {}
-            print("Teléfono #", i+1)
+            print("Teléfono #",i,+1)
             telefono["codigo"] = int(input("Código de país: "))
             telefono["numero"] = int(input("Número: "))
             telefono["tipo"] = input("Tipo (personal o trabajo): ")
@@ -127,10 +127,10 @@ while booleanito:
         listaRobusta.append(nuevaPersona)
         print("Persona agregada exitosamente.")
 
-    elif (opcionUsuario==2):
+elif (opcionUsuario==2):
         for i, persona in enumerate(listaRobusta):
             print("#################")
-            print(f"#### Persona #{i + 1} ####")
+            print("#### Persona" , i +1, "####")
             print("#################")
             print("ID:", persona["id"])
             print("Nombre:", persona["nombre"])
@@ -139,14 +139,14 @@ while booleanito:
 
             for j, telefono in enumerate(persona["telefonos"]):
                 print("---------------------------")
-                print(f"Teléfono #{j + 1}:")
+                print("Teléfono #" ,j+1, ":")
                 print("#### - Código:", telefono["codigo"])
                 print("#### - Número:", telefono["numero"])
                 tipo_desc = "Personal" if telefono["tipo"] == "personal" else "Trabajo"
                 print(f"#### - Tipo: Es su número de {tipo_desc}")
                 print("---------------------------")
                 
-    elif(opcionUsuario==3):
+elif(opcionUsuario==3):
         print("#################")
         print("#### Buscar Persona ####")
         print("#################")
@@ -159,7 +159,7 @@ while booleanito:
                 print("Apellido:", listaRobusta[i]["apellido"])
                 print("Edad:", listaRobusta[i]["edad"])
                 for j in range(len(listaRobusta[i]["telefonos"])):
-                    print("Teléfono #", j+1)
+                    print("Teléfono #",j, +1)
                     print("Código:", listaRobusta[i]["telefonos"][j]["codigo"])
                     print("Número:", listaRobusta[i]["telefonos"][j]["numero"])
                     print("Tipo:", listaRobusta[i]["telefonos"][j]["tipo"])
@@ -168,7 +168,7 @@ while booleanito:
             print("No se encontró una persona con ese ID.")
 
 
-    elif(opcionUsuario==4):
+elif(opcionUsuario==4):
         print("#################")
         print("#### Actualizar Persona ####")
         print("#################")
@@ -191,7 +191,7 @@ while booleanito:
         else:
             print("No se encontró una persona con ese ID.")
 
-    elif(opcionUsuario==5):
+elif(opcionUsuario==5):
         print("#################")
         print("#### Eliminar Persona ####")
         print("#################")
@@ -202,9 +202,9 @@ while booleanito:
                 print("Persona eliminada.")
                 break
 
-    elif (opcionUsuario==6):
+elif (opcionUsuario==6):
         print("Chaousssss")
         booleanito = False
 
-    else:
+else:
         print("No es una opción válida.")
