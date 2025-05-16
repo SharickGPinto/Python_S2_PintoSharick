@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "description": "Rock/pop"
+  },
+  {
+    "id": 2,
+    "description": "Pop / rock / dance / soul / R&B"
+  },
+  {
+    "id": 3,
+    "description": "Rock and roll / pop / country"
+  },
+  {
+    "id": 4,
+    "description": "Soul / jazz / blues / R&B"
+  },
+  {
+    "id": 5,
+    "description": "Pop / soft rock"
+  },
+  {
+    "id": 6,
+    "description": "Hard rock / heavy metal"
+  },
+  {
+    "id": 7,
+    "description": "R&B / soul / hip-hop"
+  },
+  {
+    "id": 8,
+    "description": "Pop rock"
+  },
+  {
+    "id": 9,
+    "description": "Rock / Hard rock / Pop rock"
+  },
+  {
+    "id": 10,
+    "description": "Smooth jazz"
+  },
+  {
+    "id": 11,
+    "description": "New-age/Celtic"
+  },
+  {
+    "id": 12,
+    "description": "Country / pop rock"
+  },
+  {
+    "id": 13,
+    "description": "Grunge / alternative rock"
+  },
+  {
+    "id": 14,
+    "description": "Latin"
+  },
+  {
+    "id": 15,
+    "description": "Pop / swing / easy listening"
+  },
+  {
+    "id": 16,
+    "description": "Latin pop / pop / pop rock"
+  },
+  {
+    "id": 17,
+    "description": "Hip-hop"
+  },
+  {
+    "id": 18,
+    "description": "Dance pop"
+  },
+  {
+    "id": 19,
+    "description": "Funk / R&B / soul"
+  },
+  {
+    "id": 20,
+    "description": "Rock / pop / surf rock"
+  },
+  {
+    "id": 21,
+    "description": "Pop / disco / R&B"
+  },
+  {
+    "id": 22,
+    "description": "Pop / dance / electronic"
+  },
+  {
+    "id": 23,
+    "description": "Teen pop"
+  },
+  {
+    "id": 24,
+    "description": "Electropop"
+  },
+  {
+    "id": 25,
+    "description": "Progressive rock / pop rock"
+  },
+  {
+    "id": 26,
+    "description": "Blues"
+  },
+  {
+    "id": 27,
+    "description": "Reggae"
+  }
+]
